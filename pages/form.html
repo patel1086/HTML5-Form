@@ -11,7 +11,8 @@
         <header class="headerContainer"><h1>HTML 5 Form Input Fields</h1></header>
         <div>
             <label for="text">Enter your Name: </label>
-            <input type="text" id="text" name="text">
+            <input type="text" id="text" name="text" placeholder="Jitendra">
+            <error-output class="text-error" for="text"></error-output>
         </div>
         <div>
             <label for="pwd">Enter Password: </label>
@@ -51,13 +52,6 @@
             <button>Submit</button>
         </div>
     </form>
-    <script>
-        const salary = document.querySelector('#salary');
-        const output = document.querySelector('.salary-output');
-        output.textContent = salary.value;
-        salary.addEventListener('input',function(){
-            output.textContent = salary.value;
-        });
-    </script>
+    <script src=../js/form.js></script>
 </body>
 </html>
