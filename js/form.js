@@ -18,6 +18,15 @@ email.addEventListener('input',function(){
     else emailError.textContent="Email Id is Invalid";
 });
 
+//Mobile Number Validation
+const mobile = document.querySelector('#mobile');
+const mobError = document.querySelector('.mobile-error');
+mobile.addEventListener('input',function(){
+let mobileRegex = RegExp('[91]{2}[7-9]{1}[0-9]{9}');
+if(mobileRegex.test(mobile.value))
+mobError.textContent="";
+else mobError.textContent="Invalid Mobile number";
+});
 
 const salary = document.querySelector('#salary');
 const output = document.querySelector('.salary-output');
